@@ -40,25 +40,25 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "🅢—————————"
+        bar = "🇷𝐢————————"
     elif 10 < umm < 20:
-        bar = "—🅞————————"
+        bar = "🇷𝐢𝐲———————"
     elif 20 <= umm < 30:
-        bar = "——🅝———————"
+        bar = "🇷𝐢𝐲𝐚——————"
     elif 30 <= umm < 40:
-        bar = "———🅐——————"
+        bar = "🇷𝐢𝐲𝐚 ♡—————"
     elif 40 <= umm < 50:
-        bar = "————♡—————"
+        bar = "🇷𝐢𝐲𝐚 ♡ 𝐌————"
     elif 50 <= umm < 60:
-        bar = "—————🅡————"
+        bar = "🇷𝐢𝐲𝐚 ♡ 𝐌𝐮———"
     elif 60 <= umm < 70:
-        bar = "——————🅐———"
+        bar = "🇷𝐢𝐲𝐚 ♡ 𝐌𝐮𝐬——"
     elif 70 <= umm < 80:
-        bar = "———————🅙——"
+        bar = "🇷𝐢𝐲𝐚 ♡ 𝐌𝐮𝐬𝐢—"
     elif 80 <= umm < 95:
-        bar = "————————🅐—"
+        bar = "🇷𝐢𝐲𝐚 ♡ 𝐌𝐮𝐬𝐢𝐜-"
     else:
-        bar = "——————————♡"
+        bar = "🇷𝐢𝐲𝐚 ♡ 𝐌𝐮𝐬𝐢𝐜 ♡"
 
     buttons = [
         [
@@ -75,15 +75,16 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             )
         ],
       [
-            InlineKeyboardButton(
-                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/WORLD_ALPHA",
-            ),
-            InlineKeyboardButton(
-                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/+Oh7OmMhAPKY5YTc9",
-            )
+            InlineKeyboardButton(text="✰ 𝑱𝒂𝒏𝒏𝒖 ✰", url="https://t.me/KSD_BOT_NETWORK",),
+            InlineKeyboardButton(text="✰ 𝑳𝒂𝒂𝒅𝒐 ✰", url="https://t.me/Team_riya_support",),
         ],
-         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
-        ]
+        [
+            InlineKeyboardButton(text="✰ Mᴀᴋᴇ ʏᴏᴜʀ ᴏɴ ʙᴏᴛ ✰", url="https://t.me/KSDHEROKUCC/310",),
+        ],
+        [
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")
+        ],
+    ]
 
     return buttons
 
@@ -98,14 +99,15 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
          ],
         [
-            InlineKeyboardButton(
-                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/WORLD_ALPHA",
-            ),
-            InlineKeyboardButton(
-                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/+Oh7OmMhAPKY5YTc9",
-            )
+            InlineKeyboardButton(text="✰ 𝑱𝒂𝒏𝒏𝒖 ✰", url="https://t.me/KSD_BOT_NETWORK",),
+            InlineKeyboardButton(text="✰ 𝑳𝒂𝒂𝒅𝒐 ✰", url="https://t.me/Team_riya_support",),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [
+            InlineKeyboardButton(text="✰ Mᴀᴋᴇ ʏᴏᴜʀ ᴏɴ ʙᴏᴛ ✰", url="https://t.me/KSDHEROKUCC/310",),
+        ],
+        [
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")
+        ],
     ]
 
     return buttons
